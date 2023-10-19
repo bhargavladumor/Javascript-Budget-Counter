@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Counter</title>
+    <link rel="stylesheet" href="remixicon/remixicon.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="title">
+        <h4>BUDGET COUNTER</h4>
+    </div>
+    <div class="container">
+        <div class="main d-flex">
+            <div class="box">
+                <div class="btitle radius1">
+                    <h3>Your Budget</h3>
+                </div>
+                <div class="inner">
+                    <div class="add_box d-flex">
+                        <h4>Total Budget :</h4>
+                        <input type="number" id="add_budget" placeholder="Add your budget">
+                        <div>
+                            <button class="btn" onclick="addBudget()">Add Data</button>
+                        </div>
+                    </div>
+                    <div class="expense d-flex">
+                        <h4>Add Expenses :</h4>
+                        <h5>Title <span class="space-left">:</span> 
+                            <input type="text" class="space-left" id="title" placeholder="Add expense title">
+                        </h5>
+                        <h5>Amonut <span>:</span> 
+                            <input type="text" id="amount" placeholder="Add expense amount">
+                        </h5>
+                        <div>
+                            <button class="btn" onclick="addExpense()">Add Data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="btitle">
+                    <h3>Your Expenses</h3>
+                </div>
+                <div class="inner">
+                    <div class="remain d-flex">
+                        <div class="r-title d-flex">
+                            <h4><u>Total</u></h4>
+                            <h4><u>Expenses</u></h4>
+                            <h4><u>Remain</u></h4>
+                        </div>
+                        <div class="r-values d-flex">
+                            <h4 id="total_b">--</h4>
+                            <h4 id="total_e">--</h4>
+                            <h4 id="total_r">--</h4>
+                        </div>
+                    </div>
+                    <div class="expense-list">
+                        <h4>Expenses List :</h4>
+                        <div class="ex-title d-flex">
+                            <h4 class="ex_tit"><u>Title</u></h4>
+                            <h4 class="ex_amt"><u>Amount</u></h4>
+                            <h4 class="ex_del"><u>Remove</u></h4>
+                        </div>
+                        <div class="overflow" id="ex_Items">
+                            <!-- Expenses will set from js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="btitle radius2">
+                    <h3>Total Budget</h3>
+                </div>
+                <div class="inner">
+                    <div class="charts">
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                    <div class="charts">
+                        <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chart.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    height: 600px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.main{
+    width: 100%;
+}
+.box{
+    width: 33.33%;
+    height: 600px;
+    border-left: 4px solid white;
+}
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin: 35px 0;
+}
+.btitle{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+    background-color: rgb(230, 230, 230);
+}
+.btitle h3{
+    display: inline;
+    border-bottom: 2px solid black;
+}
+.radius1{
+    border-top-left-radius: 20px;
+}
+.radius2{
+    border-top-right-radius: 20px;
+}
+.add_box, .expense, .remain{
+    height: 40%;
+    padding: 20px;
+    border-bottom: 4px solid white;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.add_box h4, .expense h4, .expense-list{
+    font-size: 20px;
+}
+input{
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 14px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inner{
+    height: calc(100% - 72px);
+}
+.btn{
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.expense{
+    height: 60%;
+    border: none;
+}
+.space-left{
+    margin-left: 15px;
+}
+.expense h5{
+    font-size: 17px;
+}
+.remain{
+    height: 25%;
+}
+.r-title, .r-values, .ex-title{
+    width: 100%;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.remain h4, .ex-title h4{
+    width: 33.33%;
+    text-align: center;
+}
+.expense-list{
+    height: 75%;
+    padding: 20px;
+}
+.expense-list h4{
+    margin: 20px 0;
+}
+.ex_tit{
+    width: 50% !important;
+}
+.ex_amt{
+    width: 30% !important;
+}
+.ex_del{
+    width: 20% !important;
+}
+.overflow{
+    overflow: auto;
+}
+.ex-item{
+    margin: 7px 0;
+}
+.ex-item h5{
+    text-align: center;
+    font-size: 16px;
+}
+.charts{
+    height: 50%;
+    border-bottom: 4px solid white;
+    padding: 20px;
+}
